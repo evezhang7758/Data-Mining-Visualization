@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forVis</title>
+    <style>
+        text.c3-title{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="observablehq-bar_line-2f6bc3dd" style="margin-left: 50px; margin-top: 80px"></div>
+
+
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/df76a458318a865e.js?v=3";
+    new Runtime().module(define, name => {
+        if (name === "bar_line") return new Inspector(document.querySelector("#observablehq-bar_line-2f6bc3dd"));
+    });
+</script>
+
+
+<div id="observablehq-bar_line-6a48ad6f" style="margin-left: 50px; margin-top: 80px"></div>
+
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/4096963d9815a5a7.js?v=3";
+    new Runtime().module(define, name => {
+        if (name === "bar_line") return new Inspector(document.querySelector("#observablehq-bar_line-6a48ad6f"));
+    });
+</script>
+
+</body>
+</html>
